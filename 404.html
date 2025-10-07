@@ -34,6 +34,96 @@
         width: 100%;
         height: 100%;
     }
+
+    /* 广告区域样式 */
+    #ad-container {
+        width: 350px;
+        position: absolute;
+        top: 40%;
+        right: 10%;
+        z-index: 10;
+        transform: translate(0, -50%);
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #ad-container h3 {
+        margin-top: 0;
+        color: rgba(0, 0, 0, 0.85);
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    #ad-buttons {
+        margin-bottom: 20px;
+    }
+
+    #ad-buttons .ad-item {
+        background-color: white;
+        border: 1px solid #e0e0e0;
+        border-radius: 6px;
+        padding: 15px;
+        margin-bottom: 10px;
+        transition: all 0.3s ease;
+    }
+
+    #ad-buttons .ad-item:hover {
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        transform: translateY(-2px);
+    }
+
+    #ad-buttons .ad-item a {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    #ad-buttons .ad-item p {
+        margin: 0;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.7);
+        line-height: 1.5;
+    }
+
+    #ad-image {
+        background-color: white;
+        border: 1px solid #e0e0e0;
+        border-radius: 6px;
+        padding: 15px;
+        text-align: center;
+    }
+
+    #ad-image img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        border-radius: 4px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    #ad-image p {
+        margin: 10px 0 0 0;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.7);
+        text-align: center;
+    }
+
+    @media (max-width: 1024px) {
+        #ad-container {
+            width: 300px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        #ad-container {
+            display: none;
+        }
+    }
     
     a,
     a img,
@@ -214,6 +304,33 @@
             <p><a href="https://090828.xyz">👉  返回首页</a></p>
         </div>
     </section>
+    
+    <!-- 右侧广告区域 -->
+    <div id="ad-container" class="animated bounce-in">
+        <h3>推荐内容</h3>
+        <div id="ad-buttons">
+            <div class="ad-item">
+                <a href="https://090828.xyz/cn/index.html" target="_blank">
+                    <p>🔗 探索我们的主站，发现更多精彩内容</p>
+                </a>
+            </div>
+            <div class="ad-item">
+                <a href="https://090828.xyz/cn/more.html" target="_blank">
+                    <p>✨ 访问"更多"页面，获取额外资源</p>
+                </a>
+            </div>
+            <div class="ad-item">
+                <a href="https://090828.xyz/cn/about.html" target="_blank">
+                    <p>ℹ️ 了解更多关于我们的信息</p>
+                </a>
+            </div>
+        </div>
+        <div id="ad-image">
+            <a href="https://vpn.bigjackson.top" target="_blank">
+                <p>红杏云：纯净，高速，稳定，全球海量节点。</p>
+            </a>
+        </div>
+    </div>
 </body>
 
 </html>
