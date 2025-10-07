@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:
+
+# 网站地图位置
+sitemap: https://090828.xyz/sitemap.xml
